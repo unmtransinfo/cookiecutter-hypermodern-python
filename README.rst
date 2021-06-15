@@ -1,6 +1,6 @@
-===============================
-cookiecutter-hypermodern-python
-===============================
+================================
+cookiecutter-UNMTransInfo-python
+================================
 
 .. badges-begin
 
@@ -11,23 +11,23 @@ cookiecutter-hypermodern-python
 .. |Status| image:: https://badgen.net/badge/status/alpha/d8624d
    :target: https://badgen.net/badge/status/alpha/d8624d
    :alt: Project Status
-.. |Python Version| image:: https://img.shields.io/pypi/pyversions/cookiecutter-hypermodern-python-instance
-   :target: https://github.com/cjolowicz/cookiecutter-hypermodern-python
+.. |Python Version| image:: https://img.shields.io/pypi/pyversions/cookiecutter-unmtransinfo-python-instance
+   :target: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python
    :alt: Python Version
 .. |CalVer| image:: https://img.shields.io/badge/calver-YYYY.MM.DD-22bfda.svg
    :target: http://calver.org/
    :alt: CalVer
-.. |License| image:: https://img.shields.io/github/license/cjolowicz/cookiecutter-hypermodern-python
+.. |License| image:: https://img.shields.io/github/license/unmtransinfo/cookiecutter-unmtransinfo-python
    :target: https://opensource.org/licenses/MIT
    :alt: License
-.. |Read the Docs| image:: https://img.shields.io/readthedocs/cookiecutter-hypermodern-python/latest.svg?label=Read%20the%20Docs
-   :target: https://cookiecutter-hypermodern-python.readthedocs.io/
-   :alt: Read the documentation at https://cookiecutter-hypermodern-python.readthedocs.io/
-.. |Tests| image:: https://github.com/cjolowicz/cookiecutter-hypermodern-python/workflows/Tests/badge.svg
-   :target: https://github.com/cjolowicz/cookiecutter-hypermodern-python/actions?workflow=Tests
+.. |Read the Docs| image:: https://img.shields.io/readthedocs/cookiecutter-unmtransinfo-python/latest.svg?label=Read%20the%20Docs
+   :target: https://cookiecutter-unmtransinfo-python.readthedocs.io/
+   :alt: Read the documentation at https://cookiecutter-unmtransinfo-python.readthedocs.io/
+.. |Tests| image:: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python/workflows/Tests/badge.svg
+   :target: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python/actions?workflow=Tests
    :alt: Tests
-.. |Codecov| image:: https://codecov.io/gh/cjolowicz/cookiecutter-hypermodern-python-instance/branch/main/graph/badge.svg
-   :target: https://codecov.io/gh/cjolowicz/cookiecutter-hypermodern-python-instance
+.. |Codecov| image:: https://codecov.io/gh/unmtransinfo/cookiecutter-unmtransinfo-python-instance/branch/main/graph/badge.svg
+   :target: https://codecov.io/gh/unmtransinfo/cookiecutter-unmtransinfo-python-instance
    :alt: Codecov
 .. |pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
    :target: https://github.com/pre-commit/pre-commit
@@ -45,12 +45,12 @@ cookiecutter-hypermodern-python
    <p align="center"><img alt="logo" src="docs/_static/logo.png" width="50%" /></p>
 
 
-Cookiecutter_ template for a Python package based on the
+Cookiecutter_ template for UNM Translational Informatics Python packages,  based on the
 `Hypermodern Python`_ article series.
 
 ✨📚✨ `Read the full documentation`__
 
-__ https://cookiecutter-hypermodern-python.readthedocs.io/
+__ https://cookiecutter-unmtransinfo-python.readthedocs.io/
 
 
 Usage
@@ -58,7 +58,7 @@ Usage
 
 .. code:: console
 
-   $ cookiecutter gh:cjolowicz/cookiecutter-hypermodern-python --checkout=2021.6.15
+   $ cookiecutter gh:unmtransinfo/cookiecutter-unmtransinfo-python --checkout=2021.6.15
 
 
 Features
@@ -87,7 +87,7 @@ Features
 - Generate command-line reference with sphinx-click_
 - Manage project labels with `GitHub Labeler`_
 
-The template supports Python 3.6, 3.7, 3.8, and 3.9.
+The template supports Python 3.8, and 3.9.
 
 .. features-end
 

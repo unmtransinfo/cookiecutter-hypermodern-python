@@ -1,7 +1,7 @@
 Contributor Guide
 =================
 
-Thank you for your interest in improving the Hypermodern Python Cookiecutter.
+Thank you for your interest in improving the UNM Translational Informatics Python Cookiecutter.
 This project is open-source under the `MIT license`_ and
 welcomes contributions in the form of bug reports, feature requests, and pull requests.
 
@@ -13,9 +13,9 @@ Here is a list of important resources for contributors:
 - `Code of Conduct`_
 
 .. _MIT license: https://opensource.org/licenses/MIT
-.. _Source Code: https://github.com/cjolowicz/cookiecutter-hypermodern-python
-.. _Documentation: https://cookiecutter-hypermodern-python.readthedocs.io/
-.. _Issue Tracker: https://github.com/cjolowicz/cookiecutter-hypermodern-python/issues
+.. _Source Code: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python
+.. _Documentation: https://cookiecutter-unmtransinfo-python.readthedocs.io/
+.. _Issue Tracker: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python/issues
 
 
 How to report a bug
@@ -57,7 +57,7 @@ from your development version:
 
 .. code:: console
 
-   $ cookiecutter path/to/cookiecutter-hypermodern-python
+   $ cookiecutter path/to/cookiecutter-unmtransinfo-python
 
 You may also want to push your generated project to GitHub,
 and set up `continuous integration`_.
@@ -66,8 +66,8 @@ and set up `continuous integration`_.
 .. _Poetry: https://python-poetry.org/
 .. _Nox: https://nox.thea.codes/
 .. _nox-poetry: https://nox-poetry.readthedocs.io/
-.. _Github: https://github.com/cjolowicz/cookiecutter-hypermodern-python
-.. _continuous integration: https://cookiecutter-hypermodern-python.readthedocs.io/en/stable/quickstart.html#continuous-integration
+.. _Github: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python
+.. _continuous integration: https://cookiecutter-unmtransinfo-python.readthedocs.io/en/stable/quickstart.html#continuous-integration
 
 
 How to test the project
@@ -76,7 +76,7 @@ How to test the project
 Please refer to the `User Guide`_
 for instructions on how to run the test suite locally.
 
-.. _User Guide: https://cookiecutter-hypermodern-python.readthedocs.io/en/latest/guide.html#how-to-test-your-project
+.. _User Guide: https://cookiecutter-unmtransinfo-python.readthedocs.io/en/latest/guide.html#how-to-test-your-project
 
 
 How to submit changes
@@ -96,7 +96,7 @@ Feel free to submit early, though—we can always iterate on this.
 It is recommended to open an issue before starting work on anything.
 This will allow a chance to talk it over with the owners and validate your approach.
 
-.. _pull request: https://github.com/cjolowicz/cookiecutter-hypermodern-python/pulls
+.. _pull request: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python/pulls
 
 
 How to accept changes
@@ -164,6 +164,6 @@ After publishing the release, the following automated steps are triggered:
 - `Read the Docs`_ builds a new stable version of the documentation.
 
 .. _Calendar Versioning: https://calver.org/
-.. _Read the Docs: https://cookiecutter-hypermodern-python.readthedocs.io/
+.. _Read the Docs: https://cookiecutter-unmtransinfo-python.readthedocs.io/
 .. github-only
 .. _Code of Conduct: CODE_OF_CONDUCT.rst

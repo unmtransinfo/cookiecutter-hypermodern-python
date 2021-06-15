@@ -10,24 +10,22 @@ jobs:
           - { python-version: 3.9, os: windows-latest }
           - { python-version: 3.9, os: macos-latest }
           - { python-version: 3.8, os: ubuntu-latest }
-          - { python-version: 3.7, os: ubuntu-latest }
-          - { python-version: 3.6, os: ubuntu-latest }
     name: Python ${{ matrix.python-version }} (${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v2.3.4
         with:
-          path: cookiecutter-hypermodern-python
+          path: cookiecutter-unmtransinfo-python
       - uses: actions/setup-python@v2.2.2
         with:
           python-version: ${{ matrix.python-version }}
       - name: Install tools using pip
-        working-directory: cookiecutter-hypermodern-python
+        working-directory: cookiecutter-unmtransinfo-python
         run: |
           pip install --constraint=.github/workflows/constraints.txt pip
           pip install --constraint=.github/workflows/constraints.txt cookiecutter nox nox-poetry poetry
       - name: Generate project using Cookiecutter
-        run: cookiecutter --no-input cookiecutter-hypermodern-python
+        run: cookiecutter --no-input cookiecutter-unmtransinfo-python
       - name: Create git repository
         if: matrix.os != 'windows-latest'
         run: |
@@ -36,7 +34,7 @@ jobs:
           git config --local user.email "action@github.com"
           git add .
           git commit --message="Initial import"
-        working-directory: hypermodern-python
+        working-directory: unmtransinfo-python
       - name: Create git repository (Windows)
         if: matrix.os == 'windows-latest'
         run: |
@@ -49,7 +47,7 @@ jobs:
           $ErrorActionPreference = "Stop"
           git add --renormalize .
           git commit --message="Initial import"
-        working-directory: hypermodern-python
+        working-directory: unmtransinfo-python
       - name: Compute cache key for pre-commit
         if: matrix.os != 'windows-latest'
         id: cache_key
@@ -68,12 +66,12 @@ jobs:
         if: matrix.os != 'windows-latest'
         with:
           path: ~/.cache/pre-commit
-          key: ${{ steps.cache_key.outputs.result }}-${{ hashFiles('hypermodern-python/.pre-commit-config.yaml') }}
+          key: ${{ steps.cache_key.outputs.result }}-${{ hashFiles('unmtransinfo-python/.pre-commit-config.yaml') }}
           restore-keys: |
             ${{ steps.cache_key.outputs.result }}-
       - name: Run test suite using Nox
         run: nox --force-color
-        working-directory: hypermodern-python
+        working-directory: unmtransinfo-python
       - name: Install dependencies using Poetry
         run: poetry install --ansi
-        working-directory: hypermodern-python
+        working-directory: unmtransinfo-python

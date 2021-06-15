@@ -6,7 +6,7 @@ import nox
 from nox.sessions import Session
 
 nox.options.sessions = ["docs"]
-owner, repository = "cjolowicz", "cookiecutter-hypermodern-python"
+owner, repository = "unmtransinfo", "cookiecutter-unmtransinfo-python"
 labels = "cookiecutter", "documentation"
 bump_paths = "README.rst", "docs/guide.rst", "docs/index.rst", "docs/quickstart.rst"
 

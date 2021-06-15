@@ -7,48 +7,48 @@ jobs:
   instance:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out cookiecutter-hypermodern-python
+      - name: Check out cookiecutter-unmtransinfo-python
         uses: actions/checkout@v2.3.4
         with:
-          path: cookiecutter-hypermodern-python
-      - name: Check out cookiecutter-hypermodern-python-instance
+          path: cookiecutter-unmtransinfo-python
+      - name: Check out cookiecutter-unmtransinfo-python-instance
         uses: actions/checkout@v2.3.4
         with:
-          repository: "cjolowicz/cookiecutter-hypermodern-python-instance"
-          path: cookiecutter-hypermodern-python-instance
+          repository: "unmtransinfo/cookiecutter-unmtransinfo-python-instance"
+          path: cookiecutter-unmtransinfo-python-instance
           token: ${{ secrets.X_GITHUB_TOKEN }}
       - name: Set up Python 3.9
         uses: actions/setup-python@v2.2.2
         with:
           python-version: "3.9"
       - name: Install cookiecutter
-        working-directory: cookiecutter-hypermodern-python
+        working-directory: cookiecutter-unmtransinfo-python
         run: |
           pip install --constraint=.github/workflows/constraints.txt pip
           pip install --constraint=.github/workflows/constraints.txt cookiecutter
       - name: Remove working tree
         run: |
-          mv cookiecutter-hypermodern-python-instance/.git tmp.git
-          rm -rf cookiecutter-hypermodern-python-instance
-          mkdir cookiecutter-hypermodern-python-instance
-          mv tmp.git cookiecutter-hypermodern-python-instance/.git
+          mv cookiecutter-unmtransinfo-python-instance/.git tmp.git
+          rm -rf cookiecutter-unmtransinfo-python-instance
+          mkdir cookiecutter-unmtransinfo-python-instance
+          mv tmp.git cookiecutter-unmtransinfo-python-instance/.git
       - name: Invoke cookiecutter
         run: >-
           cookiecutter
           https://github.com/${GITHUB_REPOSITORY}
           --overwrite-if-exists
           --no-input
-          project_name=cookiecutter-hypermodern-python-instance
+          project_name=cookiecutter-unmtransinfo-python-instance
       - name: Create commit
         run: |
-          cd cookiecutter-hypermodern-python
+          cd cookiecutter-unmtransinfo-python
           author="$(git show --no-patch --format='%an <%ae>')"
           date="$(git show --no-patch --format=%ad)"
           message="$(git show --no-patch --format=%B | sed 's/ *(#[0-9]\+)//g')
 
           Original-Commit: ${GITHUB_REPOSITORY}@${GITHUB_SHA::7}"
 
-          cd ../cookiecutter-hypermodern-python-instance
+          cd ../cookiecutter-unmtransinfo-python-instance
           git config --local user.name "GitHub Action"
           git config --local user.email "action@github.com"
           git add .
@@ -56,7 +56,7 @@ jobs:
       - name: Push to instance
         run: >-
           git
-          -C cookiecutter-hypermodern-python-instance
+          -C cookiecutter-unmtransinfo-python-instance
           push
-          https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/cjolowicz/cookiecutter-hypermodern-python-instance.git
+          https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/unmtransinfo/cookiecutter-unmtransinfo-python-instance.git
           HEAD:main

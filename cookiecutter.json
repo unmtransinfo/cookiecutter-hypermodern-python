@@ -1,10 +1,10 @@
 {
-  "project_name": "hypermodern-python",
+  "project_name": "unmtransinfo-python",
   "package_name": "{{ cookiecutter.project_name.replace('-', '_') }}",
   "friendly_name": "{{ cookiecutter.project_name.replace('-', ' ').title() }}",
-  "author": "Claudio Jolowicz",
-  "email": "mail@claudiojolowicz.com",
-  "github_user": "cjolowicz",
+  "author": "UNM Translational Informatics Team",
+  "email": "datascience.software@salud.unm.edu",
+  "github_user": "unmtransinfo",
   "version": "0.0.0",
   "license": ["MIT", "Apache-2.0", "GPL-3.0"]
 }
