@@ -211,7 +211,7 @@ Creating a project
 ------------------
 
 Create a project from this template
-by pointing Cookiecutter to its `GitHub repository <Hypermodern Python Cookiecutter_>`__.
+by pointing Cookiecutter to its `GitHub repository <UNM Translational Informatics Python Cookiecutter_>`__.
 Use the ``--checkout`` option with the `current stable release <2021.6.15_>`__:
 
 .. code:: console
@@ -2597,7 +2597,7 @@ __ https://cjolowicz.github.io/posts/hypermodern-python-01-setup/
 
 .. _Calendar Versioning: https://calver.org
 .. _GitHub Release: https://help.github.com/en/github/administering-a-repository/about-releases
-.. _Hypermodern Python Cookiecutter: https://github.com/cjolowicz/cookiecutter-hypermodern-python
+.. _UNM Translational Informatics Python Cookiecutter: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python
 .. _Jinja: https://palletsprojects.com/p/jinja/
 .. _MIT license: https://opensource.org/licenses/MIT
 .. _PEP 257: http://www.python.org/dev/peps/pep-0257/
