@@ -56,12 +56,6 @@ Here is a detailed list of features for this Python template:
    :start-after: features-begin
    :end-before: features-end
 
-
-The current stable release is `2021.6.15`_.
-
-.. _2021.6.15: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python/releases/tag/2021.6.15
-
-
 .. _Installation:
 
 Installation
@@ -212,12 +206,10 @@ Creating a project
 
 Create a project from this template
 by pointing Cookiecutter to its `GitHub repository <UNM Translational Informatics Python Cookiecutter_>`__.
-Use the ``--checkout`` option with the `current stable release <2021.6.15_>`__:
 
 .. code:: console
 
-   $ cookiecutter gh:unmtransinfo/cookiecutter-unmtransinfo-python \
-     --checkout="2021.6.15"
+   $ cookiecutter gh:unmtransinfo/cookiecutter-unmtransinfo-python
 
 Cookiecutter downloads the template,
 and asks you a series of questions about project variables,
@@ -871,8 +863,6 @@ and easily switch between them:
 
 .. code:: console
 
-   $ poetry env use 3.6
-   $ poetry env use 3.7
    $ poetry env use 3.8
    $ poetry env use 3.9
 

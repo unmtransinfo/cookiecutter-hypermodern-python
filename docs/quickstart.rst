@@ -37,8 +37,7 @@ Generate a Python project:
 
 .. code:: console
 
-   $ cookiecutter gh:unmtransinfo/cookiecutter-unmtransinfo-python \
-     --checkout="2021.6.15"
+   $ cookiecutter gh:unmtransinfo/cookiecutter-unmtransinfo-python
 
 Change to the root directory of your new project,
 and create a Git repository:

@@ -58,7 +58,7 @@ Usage
 
 .. code:: console
 
-   $ cookiecutter gh:unmtransinfo/cookiecutter-unmtransinfo-python --checkout=2021.6.15
+   $ cookiecutter gh:unmtransinfo/cookiecutter-unmtransinfo-python
 
 
 Features
