@@ -2,8 +2,8 @@
 from datetime import datetime
 
 
-project = "Hypermodern Python Cookiecutter"
-author = "Claudio Jolowicz"
+project = "UNM Translational Informatics Python Cookiecutter"
+author = "Joel Berendzen"
 copyright = f"{datetime.now().year}, {author}"
 extensions = ["sphinx.ext.intersphinx"]
 intersphinx_mapping = {"mypy": ("https://mypy.readthedocs.io/en/stable/", None)}
@@ -14,8 +14,8 @@ html_theme_options = {
     "github_banner": "true",
     "github_button": "true",
     "github_count": "true",
-    "github_user": "cjolowicz",
-    "github_repo": "cookiecutter-hypermodern-python",
+    "github_user": "unmtransinfo",
+    "github_repo": "cookiecutter-unmtransinfo-python",
     "github_type": "star",
     "logo": "logo.png",
     "logo_name": "true",
@@ -30,5 +30,5 @@ linkcheck_ignore = [
     "https://github.com/pycqa/pep8-naming#",
     "https://github.com/terrencepreilly/darglint#",
     "https://github.com/PyCQA/mccabe#",
-    "https://github.com/cjolowicz/cookiecutter-hypermodern-python/releases/tag/",
+    "https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python/releases/tag/",
 ]

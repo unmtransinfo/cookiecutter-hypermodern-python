@@ -2,7 +2,7 @@ User Guide
 ==========
 
 This is the user guide
-for the `Hypermodern Python Cookiecutter`_,
+for the `UNM Translational Informatics Python Cookiecutter`_,
 a Python template based on the `Hypermodern Python`_ article series.
 
 If you're in a hurry, check out the :doc:`quickstart guide <quickstart>`
@@ -19,9 +19,9 @@ Introduction
 About this project
 ------------------
 
-The |HPC| is a general-purpose template for Python libraries and applications,
+The |UNM| is a general-purpose template for Python libraries and applications,
 released under the `MIT license`_
-and hosted on `GitHub <Hypermodern Python Cookiecutter_>`__.
+and hosted on `GitHub <UNM Translational Informatics Python Cookiecutter_>`__.
 
 The main objective of this project template is to
 enable current best practices
@@ -29,8 +29,9 @@ through modern Python tooling.
 Our goals are to:
 
 - focus on simplicity and minimalism,
-- promote code quality through automation, and
-- provide reliable and repeatable processes,
+- promote code quality through automation,
+- provide reliable and repeatable processes, and
+- implement UNM branding
 
 all the way from local testing to publishing releases.
 
@@ -56,16 +57,9 @@ Here is a detailed list of features for this Python template:
    :end-before: features-end
 
 
-Release cadence
----------------
-
-The |HPC| has a monthly release cadence while in alpha status.
-Releases happen on the 15th of every month.
-We use `Calendar Versioning`_ with a ``YYYY.MM.DD`` versioning scheme.
-
 The current stable release is `2021.6.15`_.
 
-.. _2021.6.15: https://github.com/cjolowicz/cookiecutter-hypermodern-python/releases/tag/2021.6.15
+.. _2021.6.15: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python/releases/tag/2021.6.15
 
 
 .. _Installation:
@@ -145,14 +139,12 @@ using one of the commands listed in the
 __ https://github.com/pyenv/pyenv/wiki/Common-build-problems
 
 Install the latest point release of every supported Python version.
-This project template supports Python 3.6, 3.7, 3.8, and 3.9.
+This project template supports Python 3.8 and 3.9.
 
 .. code:: console
 
-   $ pyenv install 3.6.12
-   $ pyenv install 3.7.9
-   $ pyenv install 3.8.6
-   $ pyenv install 3.9.0
+   $ pyenv install 3.8.10
+   $ pyenv install 3.9.5
 
 After creating your project (see :ref:`below <Creating a project>`),
 you can make these Python versions accessible in the project directory,
@@ -160,11 +152,11 @@ using the following command:
 
 .. code:: console
 
-   $ pyenv local 3.9.0 3.8.6 3.7.9 3.6.12
+   $ pyenv local 3.9.5 3.8.10
 
 The first version listed is the one used when you type plain ``python``.
 Every version can be used by invoking ``python<major.minor>``.
-For example, use ``python3.7`` to invoke Python 3.7.
+For example, use ``python3.8`` to invoke Python 3.8.
 
 
 Requirements
@@ -224,7 +216,7 @@ Use the ``--checkout`` option with the `current stable release <2021.6.15_>`__:
 
 .. code:: console
 
-   $ cookiecutter gh:cjolowicz/cookiecutter-hypermodern-python \
+   $ cookiecutter gh:unmtransinfo/cookiecutter-unmtransinfo-python \
      --checkout="2021.6.15"
 
 Cookiecutter downloads the template,
@@ -247,7 +239,6 @@ Here is a complete list of the project variables defined by this template:
    ``package_name``   Import name of the package      ``hypermodern_python``
    ``friendly_name``  Friendly project name           ``Hypermodern Python``
    ``author``         Primary author                  Katherine Johnson
-   ``email``          E-mail address of the author    katherine@example.com
    ``github_user``    GitHub username of the author   ``katherine``
    ``version``        Initial project version         ``0.0.0``
    ``license``        The project license             ``MIT``
@@ -817,7 +808,7 @@ in the ``pyproject.toml`` file.
 
 .. note::
 
-   Dependencies in the |HPC| are managed by :ref:`Dependabot <Dependabot integration>`.
+   Dependencies in the |UNM| are managed by :ref:`Dependabot <Dependabot integration>`.
    When newer versions of dependencies become available,
    Dependabot updates the ``pyproject.toml`` and ``poetry.lock`` files and submits a pull request.
 
@@ -943,7 +934,7 @@ Building and distributing the package
 
 .. note::
 
-   With the |HPC|,
+   With the |UNM|,
    building and distributing your package
    is taken care of by `GitHub Actions`_.
    For more information,
@@ -1221,7 +1212,7 @@ The safety session
 
 Safety_ checks the dependencies of your project for known security vulnerabilities,
 using a curated database of insecure Python packages.
-The |HPC| uses the `poetry export`_ command
+The |UNM| uses the `poetry export`_ command
 to convert Poetry's lock file to a `requirements file`_,
 for consumption by Safety.
 
@@ -1489,7 +1480,7 @@ Python-language hooks
    how this project template integrates pre-commit with Poetry and Nox.
    You can safely skip this section.
 
-Python-language hooks in the |HPC| are not managed by pre-commit.
+Python-language hooks in the |UNM| are not managed by pre-commit.
 Instead, they are tracked as development dependencies in Poetry,
 and installed into the Nox session alongside pre-commit itself.
 As development dependencies, they are also present in the Poetry environment.
@@ -1525,7 +1516,7 @@ Don't forget to remove the hooks from Poetry's dependencies and from the Nox ses
 
 .. note::
 
-   Python-language hooks in the |HPC| are defined as `system hooks`__.
+   Python-language hooks in the |UNM| are defined as `system hooks`__.
    System hooks don't have their environments managed by pre-commit;
    instead, pre-commit assumes that hook dependencies have already been installed
    and are available in its environment.
@@ -1534,7 +1525,7 @@ Don't forget to remove the hooks from Poetry's dependencies and from the Nox ses
 
    __ https://pre-commit.com/#system
 
-   Furthermore, the |HPC| defines Python-language hooks as `repository-local hooks`__.
+   Furthermore, the |UNM| defines Python-language hooks as `repository-local hooks`__.
    As such, hook definitions are not supplied by the hook repositories,
    but by the project itself.
    This makes it possible to override the hook language to ``system``, as explained above.
@@ -1642,7 +1633,7 @@ For example, use ``poetry run flake8 <file>`` to lint a modified file with Flake
 Overview of pre-commit hooks
 ----------------------------
 
-The |HPC| comes with a pre-commit configuration consisting of the following hooks:
+The |UNM| comes with a pre-commit configuration consisting of the following hooks:
 
 .. table:: pre-commit hooks
    :class: hypermodern-table
@@ -1681,7 +1672,7 @@ The Prettier hook
 Prettier_ is an opinionated code formatter for many languages,
 including YAML, Markdown, and JavaScript.
 Like Black, it has few options,
-and the |HPC| uses none of them.
+and the |UNM| uses none of them.
 
 
 .. _The Flake8 hook:
@@ -1718,7 +1709,7 @@ Linting with Flake8
 
 Flake8_ is an extensible linter framework for Python,
 and a command-line utility to run the linters on your source code.
-The |HPC| integrates Flake8 via a pre-commit_ hook,
+The |UNM| integrates Flake8 via a pre-commit_ hook,
 see the section :ref:`The Flake8 hook`.
 
 The configuration file for Flake8 and its extensions
@@ -1728,14 +1719,14 @@ For details about the configuration file, see the `official reference`__.
 __ https://flake8.pycqa.org/en/latest/user/configuration.html
 
 The sections below describe the linters in more detail.
-Each section also notes any configuration settings applied by the |HPC|.
+Each section also notes any configuration settings applied by the |UNM|.
 
 
 Overview of available plugins
 -----------------------------
 
 Flake8 comes with a rich ecosystem of plugins.
-The following table lists the Flake8 plugins used by the |HPC|,
+The following table lists the Flake8 plugins used by the |UNM|,
 and links to their lists of error codes.
 
 .. table:: Flake8 plugins
@@ -1789,7 +1780,7 @@ It is included with Flake8_ by default.
 .. _pycodestyle codes:
 __ https://pycodestyle.pycqa.org/en/latest/intro.html#error-codes
 
-The |HPC| disables the following errors and warnings
+The |UNM| disables the following errors and warnings
 for compatibility with Black_ and flake8-bugbear_:
 
 - ``E203`` (whitespace before ``:``)
@@ -1825,7 +1816,7 @@ issues with whitespace, quoting, and docstring content.
 .. _pydocstyle codes:
 __ http://www.pydocstyle.org/en/stable/error_codes.html
 
-The |HPC| selects the recommendations of the
+The |UNM| selects the recommendations of the
 `Google styleguide <Google docstring style_>`__.
 Here is an example of a function documented in Google style:
 
@@ -1873,7 +1864,7 @@ and likely bugs such as function arguments defaulting to empty lists or dictiona
 .. _flake8-bugbear codes:
 __ https://github.com/PyCQA/flake8-bugbear#list-of-warnings
 
-The |HPC| also enables Bugbear's ``B9`` warnings,
+The |UNM| also enables Bugbear's ``B9`` warnings,
 which are disabled by default.
 In particular, ``B950`` checks the maximum line length
 like pycodestyle_'s ``E501``,
@@ -1894,7 +1885,7 @@ The tool is included with Flake8_.
 .. _mccabe codes:
 __ https://github.com/PyCQA/mccabe#plugin-for-flake8
 
-The |HPC| limits code complexity to a value of 10.
+The |UNM| limits code complexity to a value of 10.
 
 .. _Cyclomatic complexity: https://en.wikipedia.org/wiki/Cyclomatic_complexity
 
@@ -1912,7 +1903,7 @@ The tool has its own configuration file, named ``.darglint``.
 .. _darglint codes:
 __ https://github.com/terrencepreilly/darglint#error-codes
 
-The |HPC| allows one-line docstrings without function signatures.
+The |UNM| allows one-line docstrings without function signatures.
 Multi-line docstrings must
 specify the function signatures completely and correctly,
 using `Google docstring style`_.
@@ -1932,7 +1923,7 @@ when Bandit is run as a stand-alone tool.)
 .. _Bandit codes:
 __ https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing
 
-The |HPC| disables ``S101`` (use of assert) for the test suite,
+The |UNM| disables ``S101`` (use of assert) for the test suite,
 as pytest_ uses assertions to verify expectations in tests.
 
 
@@ -1975,7 +1966,7 @@ options, see the `official reference`__.
 
 __ https://mypy.readthedocs.io/en/stable/config_file.html
 
-The |HPC| enables several configuration options which are off by default.
+The |UNM| enables several configuration options which are off by default.
 The following options are enabled for strictness and enhanced output:
 
 - :option:`strict <mypy --strict>`
@@ -2118,7 +2109,7 @@ Your documentation now has a public URL like this:
 
 The configuration for Read the Docs is included in the repository,
 in the file `.readthedocs.yml`__.
-The |HPC| configures Read the Docs
+The |UNM| configures Read the Docs
 to build and install the package with Poetry,
 using a so-called `PEP 517`_-build.
 
@@ -2145,7 +2136,7 @@ only direct dependencies are included.
 GitHub Actions workflows
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-The |HPC| uses `GitHub Actions`_
+The |UNM| uses `GitHub Actions`_
 to implement continuous integration and delivery.
 With GitHub Actions,
 you define so-called workflows
@@ -2172,7 +2163,7 @@ __ https://help.github.com/en/actions/automating-your-workflow-with-github-actio
 Overview of workflows
 ---------------------
 
-The |HPC| defines the following workflows:
+The |UNM| defines the following workflows:
 
 .. table:: GitHub Actions workflows
    :class: hypermodern-table
@@ -2594,7 +2585,7 @@ You can also read the articles on `this blog`__.
 
 __ https://cjolowicz.github.io/posts/hypermodern-python-01-setup/
 
-.. |HPC| replace:: *Hypermodern Python Cookiecutter*
+.. |UNM| replace:: *UNM Translational Informatics Python Cookiecutter*
 
 .. include:: ../README.rst
    :start-after: references-begin

@@ -1,5 +1,5 @@
-Hypermodern Python Cookiecutter
-===============================
+UNM Translational Informatics Python Cookiecutter
+=================================================
 
 .. toctree::
    :hidden:
@@ -11,7 +11,7 @@ Hypermodern Python Cookiecutter
    contributors
    Code of Conduct <codeofconduct>
    License <license>
-   Changelog <https://github.com/cjolowicz/cookiecutter-hypermodern-python/releases>
+   Changelog <https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python/releases>
 
 .. rst-class:: badges
 
@@ -19,7 +19,7 @@ Hypermodern Python Cookiecutter
    :start-after: badges-begin
    :end-before: badges-end
 
-Cookiecutter_ template for a Python package
+Cookiecutter_ template for UNM Translational Informatics Python packages
 based on the `Hypermodern Python`_ article series.
 
 
@@ -28,7 +28,7 @@ Usage
 
 .. code:: console
 
-   $ cookiecutter gh:cjolowicz/cookiecutter-hypermodern-python \
+   $ cookiecutter gh:unmtransinfo/cookiecutter-unmtransinfo-python \
      --checkout="2021.6.15"
 
 
@@ -45,19 +45,17 @@ FAQ
 
   *What is this project about?*
 
-The mission of this project is to
+This template implements
 enable current best practices
-through modern Python tooling.
-
-  *What makes this project different from other Python templates?*
-
-This is a general-purpose template for Python libraries and applications.
+through for Python tooling
+used in the UNM Translational Informatics Division.
 
 Our goals are:
 
 - Focus on simplicity and minimalism
 - Promote code quality through automation
 - Provide reliable and repeatable processes
+- Implement UNM Translational Informatics branding
 
 The project template is centered around the following tools:
 
@@ -65,17 +63,6 @@ The project template is centered around the following tools:
 - Nox_ for automation of checks and other development tasks
 - `GitHub Actions`_ for continuous integration and delivery
 
-  *Why is this Python template called "hypermodern"?*
-
-Hypermodernism_ is a school of chess that dates back to more than a century ago.
-If this setup ever goes out of fashion,
-I can pretend it was my secret plan from the start.
-All images on the
-`associated blog <Hypermodern Python_>`__ show
-`past visions <Retrofuturism_>`__ of the future.
-
-.. _Hypermodernism: https://en.wikipedia.org/wiki/Hypermodernism_(chess)
-.. _Retrofuturism: https://en.wikipedia.org/wiki/Retrofuturism
 
 .. include:: ../README.rst
    :start-after: references-begin
