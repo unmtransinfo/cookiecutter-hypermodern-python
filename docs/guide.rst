@@ -2276,7 +2276,7 @@ Builds on `Read the Docs`_ happen independently.
 __ https://help.github.com/en/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts
 
 The workflow also uploads coverage data to Codecov_ after running tests.
-It generates a coverage report in Cobertura_ XML format,
+It generates a coverage report in Cobertura__ XML format,
 using the :ref:`coverage session <The coverage session>`.
 The report is uploaded
 using the official `Codecov GitHub Action <codecov/codecov-action_>`__.
@@ -2585,9 +2585,7 @@ __ https://cjolowicz.github.io/posts/
    :start-after: quickstart-references-begin
    :end-before: quickstart-references-end
 
-.. _Black: https://black.readthedocs.io/en/stable/
 .. _Calendar Versioning: https://calver.org
-.. _Cobertura: https://cobertura.github.io/cobertura/
 .. _Coverage.py: https://coverage.readthedocs.io/en/coverage-5.5/
 .. _Click: https://click.palletsprojects.com/en/8.0.x/
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
