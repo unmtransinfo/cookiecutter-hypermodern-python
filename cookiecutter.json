@@ -5,7 +5,7 @@
   "email": "datascience.software@salud.unm.edu",
   "github_user": "unmtransinfo",
   "license": "MIT",
-  "project_name": "cookiecutter-unmtransinfo-python",
+  "project_name": "unmtransinfo-python",
   "friendly_name": "{{ cookiecutter.project_name.replace('-', ' ').title() }}",
   "package_name": "{{ cookiecutter.project_name.replace('-', '_') }}",
   "version": "0.0.0"
