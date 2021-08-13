@@ -2586,7 +2586,6 @@ __ https://cjolowicz.github.io/posts/
    :end-before: quickstart-references-end
 
 .. _Calendar Versioning: https://calver.org
-.. _Coverage.py: https://coverage.readthedocs.io/en/coverage-5.5/
 .. _Click: https://click.palletsprojects.com/en/8.0.x/
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
 .. _Flake8: https://flake8.pycqa.org/en/latest/
