@@ -67,3 +67,9 @@ The project template is centered around the following tools:
 .. include:: ../README.rst
    :start-after: references-begin
    :end-before: references-end
+
+.. _Hypermodern Python: https://medium.com/@cjolowicz/hypermodern-python
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _Poetry: https://python-poetry.org/
+.. _Nox: https://nox.thea.codes/
+.. _GitHub Actions: https://github.com/features/actions

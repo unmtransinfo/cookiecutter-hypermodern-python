@@ -1,4 +1,4 @@
-User Guide
+ser Guide
 ==========
 
 This is the user guide
@@ -1804,7 +1804,7 @@ issues with whitespace, quoting, and docstring content.
 `Error codes`__ are prefixed by ``D`` for "docstring".
 
 .. _pydocstyle codes:
-__ http://www.pydocstyle.org/en/stable/error_codes.html
+__ https://www.pydocstyle.org/en/stable/error_codes.html
 
 The |UNM| selects the recommendations of the
 `Google styleguide <Google docstring style_>`__.
@@ -2276,7 +2276,7 @@ Builds on `Read the Docs`_ happen independently.
 __ https://help.github.com/en/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts
 
 The workflow also uploads coverage data to Codecov_ after running tests.
-It generates a coverage report in Cobertura__ XML format,
+It generates a coverage report in Cobertura_ XML format,
 using the :ref:`coverage session <The coverage session>`.
 The report is uploaded
 using the official `Codecov GitHub Action <codecov/codecov-action_>`__.
@@ -2573,7 +2573,7 @@ __ https://medium.com/@cjolowicz/hypermodern-python-6-ci-cd-b233accfa2f6
 
 You can also read the articles on `this blog`__.
 
-__ https://cjolowicz.github.io/posts/hypermodern-python-01-setup/
+__ https://cjolowicz.github.io/posts/
 
 .. |UNM| replace:: *UNM Translational Informatics Python Cookiecutter*
 
@@ -2585,19 +2585,37 @@ __ https://cjolowicz.github.io/posts/hypermodern-python-01-setup/
    :start-after: quickstart-references-begin
    :end-before: quickstart-references-end
 
+.. _Black: https://black.readthedocs.io/en/stable/
 .. _Calendar Versioning: https://calver.org
+.. _Cobertura: https://cobertura.github.io/cobertura/
+.. _Coverage.py: https://coverage.readthedocs.io/en/coverage-5.5/
+.. _Click: https://click.palletsprojects.com/en/8.0.x/
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _Flake8: https://flake8.pycqa.org/en/latest/
+.. _GitHub: https://help.github.com/
+.. _GitHub Actions: https://github.com/features/actions
+.. _GitHub Labeler: https://github.com/marketplace/actions/github-labeler
 .. _GitHub Release: https://help.github.com/en/github/administering-a-repository/about-releases
-.. _UNM Translational Informatics Python Cookiecutter: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python
+.. _Hypermodern Python: https://medium.com/@cjolowicz/hypermodern-python
 .. _Jinja: https://palletsprojects.com/p/jinja/
 .. _MIT license: https://opensource.org/licenses/MIT
+.. _Nox: https://nox.thea.codes/
+.. _Poetry: https://python-poetry.org/
+.. _Prettier: https://prettier.io/
 .. _PEP 257: http://www.python.org/dev/peps/pep-0257/
 .. _PEP 440: https://www.python.org/dev/peps/pep-0440/
 .. _PEP 517: https://www.python.org/dev/peps/pep-0517/
 .. _PEP 518: https://www.python.org/dev/peps/pep-0518/
 .. _PEP 561: https://www.python.org/dev/peps/pep-0561/
 .. _PEP 8: http://www.python.org/dev/peps/pep-0008/
+.. _Release Drafter: https://github.com/apps/release-drafter
+.. _Safety: https://pyup.io/safety/
+.. _Sphinx: https://www.sphinx-doc.org/en/master/
 .. _TOML: https://github.com/toml-lang/toml
+.. _Typeguard: https://typeguard.readthedocs.io/en/latest/index.html
+.. _UNM Translational Informatics Python Cookiecutter: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python
 .. _YAML: https://yaml.org/
+.. _autodoc: https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
 .. _bash: https://www.gnu.org/software/bash/
 .. _curl: https://curl.haxx.se
 .. _darglint: https://github.com/terrencepreilly/darglint
@@ -2607,14 +2625,23 @@ __ https://cjolowicz.github.io/posts/hypermodern-python-01-setup/
 .. _flake8-rst-docstrings: https://github.com/peterjc/flake8-rst-docstrings
 .. _git: https://www.git-scm.com
 .. _mccabe: https://github.com/PyCQA/mccabe
+.. _mypy: http://mypy-lang.org/
+.. _napoleon: https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
+.. _nox-poetry: https://github.com/cjolowicz/nox-poetry
 .. _pep8-naming: https://github.com/pycqa/pep8-naming
 .. _pip: https://pip.pypa.io/
+.. _pipx: https://github.com/pypa/pipx
+.. _pre-commit: https://pre-commit.com/
+.. _pytest: https://docs.pytest.org/en/latest/
 .. _pre-commit-hooks: https://github.com/pre-commit/pre-commit-hooks
 .. _pycodestyle: https://pycodestyle.pycqa.org/en/latest/
-.. _pydocstyle: http://www.pydocstyle.org/
+.. _pydocstyle: https://www.pydocstyle.org/
+.. _pyenv: https://github.com/pyenv/pyenv
 .. _pyflakes: https://github.com/PyCQA/pyflakes
 .. _pygments: https://pygments.org/
 .. _reorder-python-imports: https://github.com/asottile/reorder_python_imports
 .. _reStructuredText: https://docutils.sourceforge.io/rst.html
 .. _sphinx-autobuild: https://github.com/executablebooks/sphinx-autobuild
+.. _sphinx-click: https://github.com/click-contrib/sphinx-click
 .. _sphinx-rtd-theme: https://sphinx-rtd-theme.readthedocs.io
+.. _xdoctest: https://xdoctest.readthedocs.io/en/latest/autoapi/xdoctest/index.html
