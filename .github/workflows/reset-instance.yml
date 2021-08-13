@@ -58,5 +58,5 @@ jobs:
           git
           -C cookiecutter-unmtransinfo-python-instance
           push
-          https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/unmtransinfo/cookiecutter-unmtransinfo-python-instance.git
+          https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/unmtransinfo/cookiecutter-unmtransinfo-python.git
           HEAD:main

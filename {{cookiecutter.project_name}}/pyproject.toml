@@ -17,41 +17,93 @@ classifiers = [
     "{{cookiecutter.development_status}}",
     "Programming Language :: Python :: 3.8",
     "Programming Language :: Python :: 3.9",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics"
 ]
+keywords = [
+    "science",
+    "biology",
+    "bioinformatics",
+    "genomics",
+    "data science",
+    "phylogeny",
+    "protein",
+    "sequences",
+    "structural biology"
+    ]
 
 [tool.poetry.urls]
 Changelog = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/releases"
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
-click = "^8.0.1"
+attrs = "*"
+click_loguru = "*"
+colorama = "*"
+dask = {extras = ["bag"], version = "*"}
+matplotlib = "*"
+numpy = "*"
+pandas = "*"
+schema = "*"
+scipy = "*"
+tabulate = "*"
+toml = "*"
+typer = "*"
+types-toml = "*"
+types-tabulate = "*"
 
 [tool.poetry.dev-dependencies]
-pytest = "^6.2.4"
-coverage = {extras = ["toml"], version = "^5.4"}
-safety = "^1.10.3"
-mypy = "^0.910"
-typeguard = "^2.12.1"
-xdoctest = {extras = ["colors"], version = "^0.15.5"}
-sphinx = "^4.1.2"
-sphinx-autobuild = "^2021.3.14"
-pre-commit = "^2.13.0"
+bandit = "^1.7.0"
+black = "^21.7b0"
+coverage = {extras = ["toml"], version = "^5.5"}
+darglint = "^1.8.0"
 flake8 = "^3.9.2"
-black = "^20.8b1"
 flake8-bandit = "^2.1.2"
 flake8-bugbear = "^21.4.3"
 flake8-docstrings = "^1.6.0"
 flake8-rst-docstrings = "^0.2.3"
-pep8-naming = "^0.12.0"
-darglint = "^1.8.0"
-reorder-python-imports = "^2.6.0"
+mypy = "*"
+nox = "^2021.6.12"
+nox-poetry = "^0.8.4"
+pandas-stubs = "*"
+pep8-naming = "^0.12.1"
+pre-commit = "*"
 pre-commit-hooks = "^4.0.1"
+pytest = "^6.2.4"
+pytest-datadir-mgr = "^1.2.3"
+reorder-python-imports = "^2.6.0"
+safety = "^1.10.3"
+sphinx = "*"
+sphinx-click = "*"
+sphinx-autobuild = "^2021.3.14"
 sphinx-rtd-theme = "^0.5.2"
-sphinx-click = "^3.0.1"
 Pygments = "^2.9.0"
+typeguard = "^2.12.1"
+xdoctest = {extras = ["colors"], version = "^0.15.6"}
 
 [tool.poetry.scripts]
 {{cookiecutter.project_name}} = "{{cookiecutter.package_name}}.__main__:main"
+
+[tool.black]
+line-length = 79
+target-version = ['py37', 'py38', 'py39']
+include = '\.pyi?$'
+exclude = '''
+/(
+  \.git
+  | \.mypy
+  _cache
+  | \.nox
+  | \.idea
+  | \.pytest-cache
+  | _build
+  | build
+  | dist
+  | tests/
+)/
+'''
 
 [tool.coverage.paths]
 source = ["src", "*/site-packages"]
@@ -62,7 +114,13 @@ source = ["{{cookiecutter.package_name}}"]
 
 [tool.coverage.report]
 show_missing = true
-fail_under = 100
+ignore_errors = true
+exclude_lines = [
+    "if self.debug:",
+    "pragma: no cover",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:"
+    ]
 
 [tool.mypy]
 strict = true
@@ -70,6 +128,9 @@ pretty = true
 show_column_numbers = true
 show_error_codes = true
 show_error_context = true
+
+[tool.pytest.ini_options]
+addopts = "-x"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
