@@ -11,6 +11,7 @@
    usage
    reference
    contributing
+   funding
    Code of Conduct <codeofconduct>
    License <license>
    Changelog <https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.project_name}}/releases>
