@@ -2586,14 +2586,10 @@ __ https://cjolowicz.github.io/posts/
    :end-before: quickstart-references-end
 
 .. _Calendar Versioning: https://calver.org
-.. _Click: https://click.palletsprojects.com/en/8.0.x/
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _Flake8: https://flake8.pycqa.org/en/latest/
-.. _GitHub: https://help.github.com/
 .. _GitHub Actions: https://github.com/features/actions
 .. _GitHub Labeler: https://github.com/marketplace/actions/github-labeler
 .. _GitHub Release: https://help.github.com/en/github/administering-a-repository/about-releases
-.. _Hypermodern Python: https://medium.com/@cjolowicz/hypermodern-python
 .. _Jinja: https://palletsprojects.com/p/jinja/
 .. _MIT license: https://opensource.org/licenses/MIT
 .. _Nox: https://nox.thea.codes/
@@ -2605,11 +2601,7 @@ __ https://cjolowicz.github.io/posts/
 .. _PEP 518: https://www.python.org/dev/peps/pep-0518/
 .. _PEP 561: https://www.python.org/dev/peps/pep-0561/
 .. _PEP 8: http://www.python.org/dev/peps/pep-0008/
-.. _Release Drafter: https://github.com/apps/release-drafter
-.. _Safety: https://pyup.io/safety/
-.. _Sphinx: https://www.sphinx-doc.org/en/master/
 .. _TOML: https://github.com/toml-lang/toml
-.. _Typeguard: https://typeguard.readthedocs.io/en/latest/index.html
 .. _UNM Translational Informatics Python Cookiecutter: https://github.com/unmtransinfo/cookiecutter-unmtransinfo-python
 .. _YAML: https://yaml.org/
 .. _autodoc: https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html
@@ -2624,10 +2616,8 @@ __ https://cjolowicz.github.io/posts/
 .. _mccabe: https://github.com/PyCQA/mccabe
 .. _mypy: http://mypy-lang.org/
 .. _napoleon: https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html
-.. _nox-poetry: https://github.com/cjolowicz/nox-poetry
 .. _pep8-naming: https://github.com/pycqa/pep8-naming
 .. _pip: https://pip.pypa.io/
-.. _pipx: https://github.com/pypa/pipx
 .. _pre-commit: https://pre-commit.com/
 .. _pytest: https://docs.pytest.org/en/latest/
 .. _pre-commit-hooks: https://github.com/pre-commit/pre-commit-hooks
@@ -2639,6 +2629,4 @@ __ https://cjolowicz.github.io/posts/
 .. _reorder-python-imports: https://github.com/asottile/reorder_python_imports
 .. _reStructuredText: https://docutils.sourceforge.io/rst.html
 .. _sphinx-autobuild: https://github.com/executablebooks/sphinx-autobuild
-.. _sphinx-click: https://github.com/click-contrib/sphinx-click
 .. _sphinx-rtd-theme: https://sphinx-rtd-theme.readthedocs.io
-.. _xdoctest: https://xdoctest.readthedocs.io/en/latest/autoapi/xdoctest/index.html
