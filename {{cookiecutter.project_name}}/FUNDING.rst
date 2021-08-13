@@ -18,7 +18,8 @@ from the Common Fund, Office of the Director, National Institutes of Health.
 
 *Overview:* 
 KMC grant at UNM is led by Dr. Tudor Oprea and includes collaborations with 
-Dr. Lars Juhl Jensen’s lab at NNFCPR and at EMBL-EBI with Dr. Andrew Leach 
+Dr. Lars Juhl Jensen’s lab at the Novo Nordisk Foundation Center for Protein
+Research and at EMBL-EBI with Dr. Andrew Leach
 as their Group Lead. Work from UNM includes the development of TCRD, the main 
 database supporting Pharos, and appropriate visualization tools, such as TINx. 
 Work by Dr. Oprea’s group include evaluation of the data collated into TCRD and 
