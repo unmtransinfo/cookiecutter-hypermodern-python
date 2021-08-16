@@ -39,7 +39,7 @@ Changelog = "https://github.com/{{cookiecutter.github_user}}/{{cookiecutter.proj
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
-click = "^8.0.1"
+typer = "*"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.4"
